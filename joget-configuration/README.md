@@ -13,6 +13,14 @@ For simplicity, I have been using the script on the landing page and changed the
  - export REGISTRY_PASSWORD=password
  - export REGISTRY_EMAIL=email@domain
 
+When Joget is deployed, you connect to it via the route and configure the following parameters as per:
+ - Database Type: MySQL
+ - Database Host: jogetdb
+ - Database Port: 3306
+ - Database Name: jwdb
+ - Database User: joget
+ - Database Password: joget
+
 There seems to be a few issues:
  -  the DX8 documentation page doesn't pull the associated image - e.g there's a 503 error for registry.connect.redhat.com/joget/joget-dx8-eap7
  -  for both DX7 and DX8 documentation, if the namespace (e.g joget-openshift) is modified, the application deploys but cannot pass post DB configuration.
